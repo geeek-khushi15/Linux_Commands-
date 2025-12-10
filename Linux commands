@@ -1,0 +1,138 @@
+LINUX COMMANDS — COMPLETE PRACTICAL LIST
+1. Basic File & Directory Commands
+Command	Description
+ls	List directory contents
+ls -l	Long listing (permissions, owner, size)
+ls -a	Show hidden files
+pwd	Print current working directory
+cd	Change directory
+cd ..	Go up one level
+mkdir	Create directory
+rmdir	Remove empty directory
+rm -r	Delete directory + contents
+cp	Copy files
+mv	Move/rename files
+touch	Create empty file
+cat	View file content
+nl	View file with line numbers
+head	Show first 10 lines
+tail	Show last 10 lines
+tail -f	Live file monitoring (logs)
+2. File Permissions & Ownership
+Command	Description
+chmod	Change file permissions
+chmod 755 file	rwxr-xr-x
+chown user file	Change owner
+chown user:group file	Change owner + group
+umask	Default permissions mask
+3. File Search & Filtering
+Command	Description
+find /path -name filename	Search files by name
+locate name	Fast search using DB
+grep "text" file	Search text inside file
+grep -i	Case-insensitive
+grep -r	Recursive search
+awk	Text processing
+sed	Stream editor (replace text)
+4. File Compression & Archiving
+Command	Description
+tar -cvf	Create archive
+tar -xvf	Extract archive
+gzip	Compress
+gunzip	Decompress
+zip file.zip file	Zip
+unzip file.zip	Unzip
+5. System Information
+Command	Description
+uname -a	System info
+hostname	Show hostname
+top	Real-time tasks
+htop	Improved top
+uptime	System load & uptime
+df -h	Disk usage
+du -sh folder	Folder size
+free -h	Memory usage
+whoami	Current user
+id	User/group IDs
+lsblk	List block devices
+lscpu	CPU info
+6. Package Management
+Debian / Ubuntu
+Command	Description
+apt update	Refresh repo
+apt upgrade	Upgrade packages
+apt install package	Install package
+apt remove package	Remove package
+dpkg -i file.deb	Install .deb
+RedHat / CentOS / Fedora
+Command	Description
+yum install package	Install
+yum update	Update
+dnf install package	Modern version
+rpm -ivh file.rpm	Install rpm
+7. Process Management
+Command	Description
+ps	Show processes
+ps aux	All processes
+kill PID	Kill process
+kill -9 PID	Force kill
+pgrep	Find process ID
+pkill	Kill by name
+systemctl start service	Start service
+systemctl stop service	Stop service
+systemctl status service	Status
+8. User & Group Management
+Command	Description
+useradd user	Add user
+passwd user	Add password
+userdel user	Delete user
+groupadd group	Create group
+usermod -aG group user	Add user to group
+su user	Switch user
+sudo	Run as admin
+9. Networking Commands
+Command	Description
+ifconfig	Show IP (older)
+ip a	Show IP (modern)
+ping	Test connectivity
+curl	Make web requests
+wget	Download files
+netstat -tulnp	List ports
+ss -tulnp	Modern port tool
+scp file user@ip:/path	Secure copy
+ssh user@ip	SSH login
+nmcli	Network manager
+10. Disk / Storage Commands
+Command	Description
+mount	Mount device
+umount	Unmount
+fdisk -l	Disk partitions
+mkfs.ext4 /dev/sdx	Format disk
+parted	Partition tool
+blkid	Block device IDs
+11. Logs & Monitoring
+Command	Description
+journalctl	System logs
+journalctl -u service	Logs for service
+/var/log/auth.log	Authentication logs
+/var/log/syslog	System logs
+dmesg	Kernel logs
+12. Networking & Security
+Command	Description
+iptables	Firewall rules
+ufw enable	Simple firewall
+ufw status	Firewall status
+fail2ban-client	Ban attackers
+13. Editing Files
+Editor	Usage
+nano file	Easy editor
+vi file	Open with vi
+vim file	Advanced editor
+14. Shell Commands / Misc
+Command	Description
+echo	Print text
+history	Show command history
+clear	Clear terminal
+alias	Command shortcut
+date	Show date/time
+cal	Calendar
